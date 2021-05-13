@@ -22,9 +22,9 @@ public class SingletonTest {
         }
         System.out.println(beanMap.size());
         if (beanMap.size() != 1) {
-            System.out.println("完犊子啦...");
+            System.out.println("完犊子了...");
         }
         assert beanMap.size() == 1;
-        System.out.println("Good,you success.");
+        System.out.println("静态语句块实现通过...");
     }
 }

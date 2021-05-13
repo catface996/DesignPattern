@@ -1,4 +1,4 @@
-package com.dp.单例模式.静态常量实现;
+package com.dp.单例模式.锁实现;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
@@ -7,12 +7,12 @@ import org.junit.Test;
 
 /**
  * @author by catface
- * @date 2021/5/13 10:17 上午
+ * @date 2021/5/13 2:28 下午
  */
 public class SingletonTest {
 
     @Test
-    public void test() {
+    public void getInstance() {
         Map<Singleton, Integer> beanMap = new ConcurrentHashMap<>();
         for (int i = 0; i < 100; i++) {
             new Thread(() -> {
@@ -25,6 +25,6 @@ public class SingletonTest {
             System.out.println("完犊子了...");
         }
         assert beanMap.size() == 1;
-        System.out.println("静态类验证实现通过..");
+        System.out.println("锁实现验证通过...");
     }
 }

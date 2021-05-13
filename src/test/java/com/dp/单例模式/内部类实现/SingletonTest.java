@@ -25,5 +25,6 @@ public class SingletonTest {
             System.out.println("完犊子了...");
         }
         assert beanMap.size() == 1;
+        System.out.println("内部类实现验证通过");
     }
 }
