@@ -6,6 +6,11 @@ package com.dp.单例模式.双重检查实现;
  */
 public class Singleton {
 
+    /**
+     * 必须用 volatile 修饰,防止指令重排序
+     * <p>
+     * new Object(); 不是原子操作,在此处是 new Singleton();
+     */
     private static volatile Singleton instance;
 
     private Singleton() {
