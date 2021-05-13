@@ -49,4 +49,5 @@ public class SingletonTest {
             System.out.println("双重检查实现验证通过...");
         }
     }
+
 }
