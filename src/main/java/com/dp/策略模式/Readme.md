@@ -9,7 +9,7 @@
  * 比较器的实现就是策略模式
  **/
 java.util.Comparator;
-    java.util.Collections.sort(java.util.List<T>,java.util.Comparator<? super T>);
+java.util.Collections.sort(java.util.List<T>,java.util.Comparator<? super T>);
 ~~~
 
 ## 类图
