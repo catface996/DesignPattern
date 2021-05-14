@@ -14,6 +14,8 @@ java.util.Collections.sort(java.util.List<T>,java.util.Comparator<? super T>);
 
 ## 类图
 
+
+
 策略模式:
 
 ![image-20210513155145413](https://tva1.sinaimg.cn/large/008i3skNly1gqguompkypj31a40s4q4w.jpg)
